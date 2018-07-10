@@ -1,2 +1,3 @@
-def my_peeps()
+def my_peeps(names)
+	names.include? ""
 end
