@@ -1,3 +1,8 @@
 def my_peeps(names)
-	names.include? ""
 end
+
+
+
+
+names = "Nicci", "Jordan", "Justin", "Scott", "Josh"
+p my_peeps(names)
