@@ -21,7 +21,10 @@ class TestRandomPairings < Minitest::Test
 		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 		assert_equal(true, true_value(names))
 	end
-	
 
-	
+	def test_assert_paired_multidimensional_array_appends_odd_number_array_to_even_paired_array
+		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
+		assert_equal(3, pairings(names).length)
+	end
+		
 end

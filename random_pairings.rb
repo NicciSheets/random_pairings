@@ -1,4 +1,4 @@
-names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
+#names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 
 def name_arr(names)
 	names.shuffle
@@ -20,17 +20,16 @@ end
 
 
 
-# def pairings(names)
-# 	name_arr
-# 	pairs = name_arr(names).each_slice(2).to_a
-# 	puts pairs.length
-# 	if names.length % 2 == 0 
-# 		pairs
-# 	else names.length % 2 != 0
-# 		pairs[-2].concat(pairs[-1]).flatten #this is how you call on the last 2 paired arrays, then you append them and flatten them so they're contained in 1 array
-# 		pairs.pop(1) #you have to do this to get rid of the double name you return when you call [-1] and [-2]
-# 	end
-# 	pairs
-# end
+def pairings(names)
+	pairs = name_arr_paired(names)
+	puts pairs.length
+	if names.length % 2 == 0 
+		pairs
+	else names.length % 2 != 0
+		pairs[-2].concat(pairs[-1]).flatten #this is how you call on the last 2 paired arrays, then you append them and flatten them so they're contained in 1 array
+		pairs.pop(1) #you have to do this to get rid of the double name you return when you call [-1] and [-2]
+	end
+	pairs
+end
 
 # p pairings(names)
