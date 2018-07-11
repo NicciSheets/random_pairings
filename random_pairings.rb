@@ -4,6 +4,9 @@ def name_arr(names)
 	names.shuffle
 end 
 
+def name_arr_paired(names)
+	name_arr(names).each_slice(2).to_a
+end
 
 # def true_value(names) #shows that an array of 2 returns as true
 # 	if names.shuffle.sample(2).length % 2 == 0
@@ -18,8 +21,8 @@ end
 
 
 # def pairings(names)
-# 	newarr = names.shuffle
-# 	pairs = newarr.each_slice(2).to_a
+# 	name_arr
+# 	pairs = name_arr(names).each_slice(2).to_a
 # 	puts pairs.length
 # 	if names.length % 2 == 0 
 # 		pairs
