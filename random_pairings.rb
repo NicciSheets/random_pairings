@@ -1,4 +1,5 @@
 def my_peeps(names)
+	names.shuffle
 end
 
 
