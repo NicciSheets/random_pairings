@@ -8,13 +8,13 @@ def name_arr_paired(names)
 	name_arr(names).each_slice(2).to_a
 end
 
-# def true_value(names) #shows that an array of 2 returns as true
+def true_value(names) #shows that an array of 2 returns as true
 # 	if names.shuffle.sample(2).length % 2 == 0
 # 		true
 # 	else 
 # 		false
 # 	end
-# end
+end
 
 # p true_value(names)
 

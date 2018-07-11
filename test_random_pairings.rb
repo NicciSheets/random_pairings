@@ -17,6 +17,11 @@ class TestRandomPairings < Minitest::Test
 		refute_equal(names, name_arr_paired(names))
 	end
 
+	def test_assert_length_of_each_inner_array_when_2_returns_true
+		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
+		assert_equal(true, true_value(names))
+	end
+	
 
 	
 end
