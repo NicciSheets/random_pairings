@@ -9,11 +9,11 @@ def name_arr_paired(names)
 end
 
 def true_value(names) #shows that an array of 2 returns as true
-# 	if names.shuffle.sample(2).length % 2 == 0
-# 		true
-# 	else 
-# 		false
-# 	end
+	if names.shuffle.sample(2).length % 2 == 0
+		true
+	else 
+		false
+	end
 end
 
 # p true_value(names)
