@@ -1,6 +1,7 @@
 names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 
 def name_arr(names)
+	names.shuffle
 end 
 
 
