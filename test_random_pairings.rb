@@ -11,10 +11,10 @@ class TestRandomPairings < Minitest::Test
 	end
 	#test for the length of the multidimensional arrays
 	def test_assert_returns_as_paired_multidimensional_array
-		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
-		assert_equal(4, name_arr_paired(names).length)
-		assert_equal(Array, name_arr_paired(names).class)
-		refute_equal(names, name_arr_paired(names))
+		names2 = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
+		assert_equal(4, name_arr_paired(names2).length)
+		assert_equal(Array, name_arr_paired(names2).class)
+		refute_equal(names2, name_arr_paired(names2))
 	end
 
 	def test_assert_length_of_each_inner_array_when_2_returns_true
@@ -26,5 +26,5 @@ class TestRandomPairings < Minitest::Test
 		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 		assert_equal(3, pairings(names).length)
 	end
-		
+
 end
