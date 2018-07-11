@@ -26,6 +26,7 @@ class TestRandomPairings < Minitest::Test
 		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 		assert_equal(3, pairings(names).length)
 		refute_equal(names, pairings(names))
+		assert_equal(Array, pairings(names).class)
 	end
 
 end
