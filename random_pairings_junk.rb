@@ -1,22 +1,29 @@
-names = "Nicci", "Jordan", "Justin", "Scott", "Josh"
+names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 
-def my_peeps(names)
-	names
+
+def true_value(names) #shows that an array of 2 returns as true, will use that info to run a loop that stops once returns true (until)
+	if names.shuffle.sample(2).length % 2 == 0
+		true
+	else 
+		false
+	end
 end
 
-#paired_array = names.shuffle.each_slice(2).to_a
+puts true_value(names)
 
-#p paired_array
+
 
 def pairings(names)
 	newarr = names.shuffle
 	pairs = newarr.each_slice(2).to_a
-	if pairs.length % 2 == 0
-		paired_arr = new_arr 
-	else
-		paired_arr = newarr.each_slice(3).to_a
+	puts pairs.length
+	if names.length % 2 == 0 
+		pairs
+	else names.length % 2 != 0
+		pairs[-2].concat(pairs[-1]).flatten
+		pairs.pop(1) #you have to do this to get rid of the double name you return when you call [-1] and [-2]
 	end
-	paired_arr
+	pairs
 end
 
 p pairings(names)
