@@ -18,8 +18,6 @@ end
 
 # p true_value(names)
 
-
-
 def pairings(names)
 	pairs = name_arr_paired(names)
 	if names.length % 2 == 0 

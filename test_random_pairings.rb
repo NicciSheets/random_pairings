@@ -9,7 +9,7 @@ class TestRandomPairings < Minitest::Test
 		refute_equal(names, name_arr(names))
 		assert_equal(7, name_arr(names).length)
 	end
-	#test for the length of the multidimensional arrays
+
 	def test_assert_returns_as_paired_multidimensional_array
 		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 		assert_equal(4, name_arr_paired(names).length)
@@ -29,4 +29,10 @@ class TestRandomPairings < Minitest::Test
 		assert_equal(Array, pairings(names).class)
 	end
 
+	def test_assert_still_passes_with_even_number_names_passed_in
+		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack"
+		assert_equal(3, pairings(names).length)
+		refute_equal(names, pairings(names))
+		assert_equal(Array, pairings(names).class)
+	end
 end
