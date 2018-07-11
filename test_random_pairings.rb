@@ -13,6 +13,8 @@ class TestRandomPairings < Minitest::Test
 	def test_assert_returns_as_paired_multidimensional_array
 		names = "Nicci", "Jordan", "Justin", "Scott", "Josh", "BillyJack", "Jeremy"
 		assert_equal(4, name_arr_paired(names).length)
+		assert_equal(Array, name_arr_paired(names).class)
+		refute_equal(names, name_arr_paired(names))
 	end
 
 
