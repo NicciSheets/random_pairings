@@ -20,7 +20,7 @@ def pairings(names)
 	if names.length % 2 == 0 
 		pairs
 	else names.length % 2 != 0
-		pairs[-2].concat(pairs[-1]).flatten
+		pairs[-2].concat(pairs[-1]).flatten #this is how you call on the last 2 paired arrays, then you append them and flatten them so they're contained in 1 array
 		pairs.pop(1) #you have to do this to get rid of the double name you return when you call [-1] and [-2]
 	end
 	pairs
